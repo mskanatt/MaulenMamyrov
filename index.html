@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мәулен Мамыров – Тұлға және Дәуір | Зерттеу жобасы</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Навигация -->
+    <header>
+        <div class="logo">Мамыров <span>Зерттеу Жобасы</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Басты бет</a></li>
+                <li><a href="#timeline">Өмір жолы</a></li>
+                <li><a href="#gallery">Фотоархив</a></li>
+                <li><a href="#interview">Біздің сұхбат</a></li>
+                <li><a href="#archive">Тарихи бейне</a></li>
+                <li><a href="#map">Туған жері</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Басты бет -->
+    <section id="home" class="hero">
+        <div class="project-badge">Ғылыми-Зерттеу Жобасы</div>
+
+        <div class="hero-img-container">
+            <img src="images/portrait.jpg" alt="Мәулен Мамыров портреті">
+        </div>
+
+        <h1>МӘУЛЕН МАМЫРОВ</h1>
+        <h2>Тұлға және дәуір</h2>
+        <p>«Жетісу өңірінің спорттық дамуына үлес қосқан тұлға: 1996 жылғы Атланта Олимпиадасының қола жүлдегері»</p>
+        <a href="#timeline" class="btn">Өмір жолына шолу</a>
+    </section>
+
+    <!-- Хронология (слайдер) -->
+    <section id="timeline" class="bg-alt">
+        <h2 class="section-title">Тарихи хронология</h2>
+
+        <div class="slider-container">
+            <button class="slider-btn prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="slider-wrapper" id="sliderWrapper">
+
+                <div class="slide">
+                    <div class="slide-year">1988 жыл</div>
+                    <h3>Вольфурт, Австрия</h3>
+                    <p>Жастар арасындағы әлем біріншілігінің қола жүлдегері.</p>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-year">1990 жыл</div>
+                    <h3>КСРО</h3>
+                    <p>КСРО чемпионы және Кубок жеңімпазы.</p>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-year">1992 жыл</div>
+                    <h3>Мәскеу, Ресей</h3>
+                    <p>ТМД чемпионатында қола жүлдегер атанды.</p>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-year">1994 жыл</div>
+                    <h3>Хиросима, Жапония</h3>
+                    <p>Азия ойындарының чемпионы, алтын медаль жеңіп алды.</p>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-year">1995 жыл</div>
+                    <h3>Ташкент, Өзбекстан</h3>
+                    <p>Орталық Азия ойындарының жеңімпазы.</p>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-year">1996 жыл</div>
+                    <h3>Атланта, АҚШ</h3>
+                    <p>Олимпиада ойындарының қола жүлдегері атанды. Тәуелсіз Қазақстанның тарихи жеңісі.</p>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-year">1997 жыл</div>
+                    <h3>Красноярск, Ресей</h3>
+                    <p>Әлем чемпионатының қола жүлдегері.</p>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-year">1997 жыл</div>
+                    <h3>Пусан, Оңтүстік Корея</h3>
+                    <p>Шығыс Азия ойындарының чемпионы.</p>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-year">1998 жыл</div>
+                    <h3>Бангкок, Таиланд</h3>
+                    <p>Азия ойындарының қола жүлдегері.</p>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-year">1999 жыл</div>
+                    <h3>Ташкент, Өзбекстан</h3>
+                    <p>Азия чемпионы.</p>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-year">2001 жыл</div>
+                    <h3>Осака, Жапония</h3>
+                    <p>Шығыс Азия ойындарының чемпионы.</p>
+                </div>
+
+            </div>
+            <button class="slider-btn next-btn" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+        <div class="slider-dots" id="sliderDots"></div>
+    </section>
+
+    <!-- Фотоархив (жаңа бөлім) -->
+    <section id="gallery">
+        <h2 class="section-title">Фотоархив</h2>
+        <p class="gallery-intro">Спорттық мансаптан сақталған сәттер. Үлкейту үшін суретті басыңыз.</p>
+
+        <div class="gallery-grid">
+            <figure class="gallery-item">
+                <img src="images/match-1.jpg" alt="Халықаралық жарыстағы белдесу">
+                <figcaption>Халықаралық жарыстағы белдесу</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="images/match-2.jpg" alt="Жеңістен кейінгі сәт">
+                <figcaption>Белдесуден кейінгі сәт</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Сұхбат -->
+    <section id="interview" class="interview-section">
+        <h2 class="section-title">Біздің зерттеу: Арнайы сұхбат</h2>
+        <p class="interview-intro">Бұл жоба аясында біз Олимпиада жүлдегері Мәулен Сатымбайұлы Мамыровпен арнайы кездесіп, оның спорттық жолы, өңір спортының дамуы және жастарға айтар ақылы туралы эксклюзивті сұхбат алдық.</p>
+
+        <div class="interview-content">
+            <div class="interview-photos">
+                <img src="images/meeting-1.jpg" alt="Мәулен Мамыровпен кездесу">
+                <img src="images/meeting-2.jpg" alt="Зерттеу жобасы аясындағы естелік сурет">
+            </div>
+
+            <div class="interview-video">
+                <div class="interview-video-title">Толық сұхбат бейнежазбасы</div>
+                <div class="video-container-local">
+                    <video controls preload="metadata" playsinline>
+                        <source src="videos/interview.mp4" type="video/mp4">
+                        Кешіріңіз, сіздің браузеріңіз видео ойнатуды қолдамайды.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Тарихи архив (YouTube) -->
+    <section id="archive" class="archive-section bg-alt">
+        <h2 class="section-title">Тарихи мұра</h2>
+        <p class="section-lead">Тәуелсіз Қазақстан тарихындағы елеулі сәт: Мәулен Мамыровтың 1996 жылғы Атланта Олимпиадасындағы жүлделі белдесуі.</p>
+
+        <div class="archive-video-wrapper">
+            <div class="video-responsive">
+                <iframe
+                    src="https://www.youtube.com/embed/b5Xp3AnQsm0"
+                    title="Мәулен Мамыров Олимпиада"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Туған жері / Карта -->
+    <section id="map">
+        <h2 class="section-title">Туған жері – Ақиық ауылы</h2>
+        <div class="map-container">
+            <div class="map-text">
+                <h3>Батырлар мекені</h3>
+                <p>Мәулен Сатымбайұлы Жетісу өңірі, Қаратал ауданына қарасты Ақиық ауылында дүниеге келген.</p>
+                <p>Бұл өңір – талай мықты палуандар мен қайраткерлерді түлеткен қасиетті жер. Осы жерден басталған жол оны әлемдік аренаға алып шықты.</p>
+            </div>
+            <div class="map-frame">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d185816.1432126291!2d77.81827409249704!3d45.24430985226938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3882f06b637beeb7%3A0xc39f9b5a03e1e69b!2sKaratal%20District%2C%20Kazakhstan!5e0!3m2!1sen!2skz!4v1714000000000!5m2!1sen!2skz"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 жыл. І. Жансүгіров атындағы Жетісу университеті.<br>Жетісу өңірінің спорттық дамуына үлес қосқан тұлға: Мәулен Мамыров тақырыбындағы зерттеу жобасы.</p>
+    </footer>
+
+    <!-- Үлкейтілген сурет (lightbox) -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img src="" alt="" id="lightboxImg">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
